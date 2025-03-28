@@ -1,0 +1,48 @@
+.login-input:focus{
+    outline: none;
+}
+
+.login-loader {
+    border: 3px solid transparent;
+    border-top: 3px solid #f3f3f3;
+    border-left: 3px solid #f3f3f3;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 0.5s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+  .google-login-button {
+    width: 30vw;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+
+.google-login-button > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px; 
+}
+
+
+/* Custom CSS to position the phone input dropdown at the top */
+.country-list {
+  position: absolute;
+  bottom: 100%;
+  top: auto;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Ensure parent elements are positioned properly */
+.react-tel-input {
+  position: relative;
+}

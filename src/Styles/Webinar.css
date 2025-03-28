@@ -1,0 +1,49 @@
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px; 
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px; 
+    border: 2px solid white; 
+}
+
+
+
+.glow-effect {
+    box-shadow: 0 0 10px #c12e2e;
+}
+.glow-effect:hover {
+    box-shadow: 0 0 20px #c12e2e;
+}
+
+
+
+
+
+/* carousel.css */
+.slide-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .slide-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  .slide-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .slide-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
